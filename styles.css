@@ -13,20 +13,21 @@ body {
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="32" width="32"><text y="20" font-size="20">🎉</text></svg>')
       16 16,
     auto;
+  font-size: 1rem; /* Base font size */
 }
 #countdown {
-  font-size: 4rem;
+  font-size: 4rem; /* 4 times the base font size */
   text-align: center;
 }
 #message {
-  font-size: 6rem;
+  font-size: 6rem; /* 6 times the base font size */
   text-align: center;
   margin-top: 1rem;
   animation: text 1s infinite alternate;
 }
 
 #Year {
-  font-size: 5rem;
+  font-size: 5rem; /* 5 times the base font size */
   text-align: center;
   margin-top: 1rem;
   animation: text 1s infinite alternate;
@@ -45,18 +46,6 @@ body {
     0 0 35px #4c4e70, 0 0 40px #4c4e70, 0 0 50px #4c4e70, 0 0 75px #4c4e70;
 }
 
-@media (max-width: 768px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-  #countdown {
-    font-size: 2rem;
-  }
-  #message {
-    font-size: 1.5rem;
-  }
-}
-
 .background-video {
   position: fixed;
   top: 0;
@@ -70,7 +59,7 @@ body {
 .header-text {
   font-variant: small-caps;
   color: #686dce;
-  font-size: 5rem;
+  font-size: 5rem; /* 5 times the base font size */
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 32px;
@@ -80,7 +69,7 @@ body {
 .click-text {
   font-variant: small-caps;
   color: #686dce;
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* 1.5 times the base font size */
   text-align: center;
   margin-top: 1rem;
   animation: text 2s infinite alternate;
@@ -101,7 +90,7 @@ body {
 .footer p {
   font-family: "Press Start 2P";
   font-variant: normal;
-  font-size: 0.7rem;
+  font-size: 0.7rem; /* 0.7 times the base font size */
   color: #858aec;
   padding-top: 10px;
   margin-bottom: 20px;
@@ -114,4 +103,227 @@ body {
   color: #b8baff;
 
   text-shadow: 0 0 7px #27004b !important;
+}
+
+@media (max-width: 2560px) {
+  body {
+    font-size: 0.8rem; /* Reduce base font size on smaller screens */
+    flex-direction: column; /* Stack elements vertically */
+    padding: 1rem; /* Add padding for better spacing */
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  #countdown {
+    font-size: 2rem; /* 2 times the base font size */
+  }
+  #message {
+    font-size: 1.5rem; /* 1.5 times the base font size */
+  }
+  #Year {
+    font-size: 2.5rem; /* 2.5 times the base font size */
+  }
+  .header-text {
+    font-size: 3rem; /* Adjust header text size */
+  }
+  .click-text {
+    font-size: 1rem; /* Adjust click text size */
+  }
+  .footer p {
+    font-size: 0.6rem; /* Adjust footer text size */
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    font-size: 0.8rem; /* Reduce base font size on smaller screens */
+    flex-direction: column; /* Stack elements vertically */
+    padding: 1rem; /* Add padding for better spacing */
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  #countdown {
+    font-size: 2rem; /* 2 times the base font size */
+  }
+  #message {
+    font-size: 1.5rem; /* 1.5 times the base font size */
+  }
+  #Year {
+    font-size: 2.5rem; /* 2.5 times the base font size */
+  }
+  .header-text {
+    font-size: 3rem; /* Adjust header text size */
+  }
+  .click-text {
+    font-size: 1rem; /* Adjust click text size */
+  }
+  .footer p {
+    font-size: 0.6rem; /* Adjust footer text size */
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 0.8rem; /* Reduce base font size on smaller screens */
+    flex-direction: column; /* Stack elements vertically */
+    padding: 1rem; /* Add padding for better spacing */
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  #countdown {
+    font-size: 2rem; /* 2 times the base font size */
+  }
+  #message {
+    font-size: 1.5rem; /* 1.5 times the base font size */
+  }
+  #Year {
+    font-size: 2.5rem; /* 2.5 times the base font size */
+  }
+  .header-text {
+    font-size: 2.7rem; /* Adjust header text size */
+  }
+  .click-text {
+    font-size: 1rem; /* Adjust click text size */
+  }
+  .footer p {
+    font-size: 0.6rem; /* Adjust footer text size */
+  }
+  .background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    font-size: 0.8rem; /* Reduce base font size on smaller screens */
+    flex-direction: column; /* Stack elements vertically */
+    padding: 1rem; /* Add padding for better spacing */
+  }
+  h1 {
+    font-size: 1rem;
+  }
+  #countdown {
+    font-size: 18px !important; /* 2 times the base font size */
+  }
+  #message {
+    font-size: 1.5rem; /* 1.5 times the base font size */
+  }
+  #Year {
+    font-size: 2.5rem; /* 2.5 times the base font size */
+  }
+
+  #header-2025 {
+    margin-bottom: 0px;
+  }
+  .header-text {
+    font-size: 24px !important; /* Adjust header text size */
+  }
+  .click-text {
+    font-size: 9px !important; /* Adjust click text size */
+  }
+  .footer p {
+    font-size: 0.6rem; /* Adjust footer text size */
+  }
+  .background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    font-size: 0.8rem; /* Reduce base font size on smaller screens */
+    flex-direction: column; /* Stack elements vertically */
+    padding: 1rem; /* Add padding for better spacing */
+  }
+  h1 {
+    font-size: 1rem;
+  }
+  #countdown {
+    font-size: 14px !important; /* 2 times the base font size */
+  }
+  #message {
+    font-size: 1.5rem; /* 1.5 times the base font size */
+  }
+  #Year {
+    font-size: 2.5rem; /* 2.5 times the base font size */
+  }
+
+  #header-2025 {
+    margin-bottom: 0px;
+  }
+  .header-text {
+    font-size: 21px !important; /* Adjust header text size */
+  }
+  .click-text {
+    font-size: 9px !important; /* Adjust click text size */
+  }
+  .footer p {
+    font-size: 0.6rem; /* Adjust footer text size */
+  }
+  .background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    font-size: 0.8rem; /* Reduce base font size on smaller screens */
+    flex-direction: column; /* Stack elements vertically */
+    padding: 1rem; /* Add padding for better spacing */
+  }
+  h1 {
+    font-size: 1rem;
+  }
+  #countdown {
+    font-size: 14px !important; /* 2 times the base font size */
+  }
+  #message {
+    font-size: 1.5rem; /* 1.5 times the base font size */
+  }
+  #Year {
+    font-size: 2.5rem; /* 2.5 times the base font size */
+  }
+
+  #header-2025 {
+    margin-bottom: 0px;
+  }
+  .header-text {
+    font-size: 18px !important; /* Adjust header text size */
+  }
+  .click-text {
+    margin-top: 0px;
+    font-size: 6px !important; /* Adjust click text size */
+  }
+  .footer p {
+    font-size: 6px; /* Adjust footer text size */
+  }
+  .background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
 }
