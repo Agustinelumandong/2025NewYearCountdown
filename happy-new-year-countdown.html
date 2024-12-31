@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2025 New Year Countdown</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <video class="background-video" autoplay loop muted id="bg-video">
+      <source
+        id="bg-video-source"
+        src="backgroundVideo/bg1/bg-noFireWorks.mp4"
+        type="video/mp4"
+      />
+      Your browser does not support the video tag.
+    </video>
+    <div>
+      <h1 id="header-2025" class="header-text text-glow">2025</h1>
+      <h2 id="header-h2" class="header-text text-glow">New Year Countdown</h2>
+      <div id="countdown" class="text-glow"></div>
+      <div id="message" class="header-text text-glow"></div>
+      <div id="Year" class="header-text text-glow"></div>
+      <h1 class="click-text">Click anywhere to launch fireworks!</h1>
+    </div>
+    <audio id="newYearAudio" loop>
+      <source
+        src="BackgroundAudio/MannyPacquiaoNewYear2016.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="index.js"></script>
+    <footer class="footer">
+      <p>
+        Created by
+        <a href="https://github.com/Agustinelumandong" target="_blank"
+          >Sean Agustine Esparagoza</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
