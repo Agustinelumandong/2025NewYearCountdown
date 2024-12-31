@@ -13,7 +13,8 @@ let fireworksEndTime;
 
 function updateCountdown() {
   const now = new Date();
-  const newYear = new Date("December 31, 2024 08:56:59").getTime();
+  // const newYear = new Date("January 01, 2025 00:00:00").getTime();
+  const newYear = new Date("January 01, 2025 00:00:00").getTime();
   const timeLeft = newYear - now.getTime();
 
   if (timeLeft <= 0 && !countdownFinished) {
@@ -83,8 +84,6 @@ function updateBackgroundVideo() {
     // If we're still within the fireworks period, don't change the video
     return;
   }
-
-  console.log("Current hour:", hours); // Keep this for debugging
 
   if (hours >= 6 && hours < 18) {
     changeBackgroundVideo("backgroundVideo/bg3/bg-morning.mp4");

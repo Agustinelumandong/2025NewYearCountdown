@@ -92,18 +92,26 @@ body {
 .footer {
   position: fixed;
   bottom: 0;
-  margin-bottom: 10px;
   left: 0;
   width: 100%;
   text-align: center;
   padding: 10px;
-
   font-variant: small-caps;
 }
 .footer p {
-  font-size: 0.8rem;
-  color: #555bce;
+  font-family: "Press Start 2P";
+  font-variant: normal;
+  font-size: 0.7rem;
+  color: #858aec;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 900;
+  text-shadow: 0 0 7px #27004b !important;
 }
 .footer p a {
-  color: #686dce;
+  padding: px;
+  border-radius: 10px;
+  color: #b8baff;
+
+  text-shadow: 0 0 7px #27004b !important;
 }
